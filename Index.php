@@ -25,13 +25,13 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarColor01">
             <ul class="navbar-nav">
                 <li class="nav-item mx-3">
-                    <a class="nav-link" href="experiences/experiences.html">Mon Parcours</a>
+                    <a class="nav-link" href="experiences/experiences.html">Mon Parcours</a> 
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mes compétances</a>
+                    <a class="nav-link dropdown-toggle" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mes compétences</a>
                     <ul class="dropdown-menu bg-dark" aria-labelledby="dropdown1">
                         <li class="dropdown-item dropdown ">
-                            <a class="dropdown-toggle text-white " id="dropdown1-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Compétances Téchniques</a>
+                            <a class="dropdown-toggle text-white " id="dropdown1-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Compétences Téchniques</a>
                             <ul class="dropdown-menu bg-dark" aria-labelledby="dropdown1-1">
                                 <li class="dropdown-item text-white"><a href="skills/technicalSkills.html?id=&frontend">Front-End</a></li>
                                 <li class="dropdown-item text-white"><a href="skills/technicalSkills.html?id=&backend">Back-End</a></li>
@@ -40,15 +40,15 @@
                                 <li class="dropdown-item text-white"><a href="skills/technicalSkills.html?id=&web">Web Technologies</a></li>
                                 <li class="dropdown-item text-white"><a href="skills/technicalSkills.html?id=&mobile">Mobile Technologies</a></li>
                                 <li class="dropdown-item text-white"><a href="skills/technicalSkills.html?id=&Uml">UML</a></li>
-                                <li class="dropdown-item text-white"><a href="skills/technicalSkills.html?id=&autres">Autres Valances</a></li>
+                                <li class="dropdown-item text-white"><a href="skills/technicalSkills.html?id=&autres">Autres Valences</a></li>
                             </ul>
                         </li>
                         <li class="dropdown-item dropdown ">
                             <a class="dropdown-toggle text-white " id="dropdown1-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Compétences Professionnelles </a>
                             <ul class="dropdown-menu bg-dark" aria-labelledby="dropdown1-1">
                                 <li class="dropdown-item text-white"><a href="skills/profissionalSkils.html?id=&analyser">Analyser</a></li>
-                                <li class="dropdown-item text-white"><a href="skills/profissionalSkils.html?id=&algorithme">Conception</a></li>
-                                <li class="dropdown-item text-white"><a href="skills/profissionalSkils.html?id=&langues">Développement</a></li>
+                                <li class="dropdown-item text-white"><a href="skills/profissionalSkils.html?id=&conception">Conception</a></li>
+                                <li class="dropdown-item text-white"><a href="skills/profissionalSkils.html?id=&developpement">Développement</a></li>
                                 <li class="dropdown-item text-white"><a href="skills/profissionalSkils.html?id=&gestionDeProjet">Gestion de projet</a></li> 
                             </ul>
                         </li>                        
@@ -56,14 +56,14 @@
                             <a class="dropdown-toggle text-white " id="dropdown1-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Compétences Humaines</a>
                             <ul class="dropdown-menu bg-dark" aria-labelledby="dropdown1-1">
                                 <li class="dropdown-item text-white"><a href="skills/HumanSkills.html?id=&Autonomie">Autonomie</a></li>
-                                <li class="dropdown-item text-white"><a href="skills/HumanSkills.html?id=&Curieux">Curieux</a></li>
+                                <li class="dropdown-item text-white"><a href="skills/HumanSkills.html?id=&Curieux">Curiosité</a></li>
                                 <li class="dropdown-item text-white"><a href="skills/HumanSkills.html?id=&Perspicace">Perspicace</a></li>
                                 <li class="dropdown-item text-white"><a href="skills/HumanSkills.html?id=&Communication">Communication</a></li>
                                 <li class="dropdown-item text-white"><a href="skills/HumanSkills.html?id=&Diplomatie">Diplomatie</a></li>
                                 <li class="dropdown-item text-white"><a href="skills/HumanSkills.html?id=&Organisation">Organisation</a></li>
                                 <li class="dropdown-item text-white"><a href="skills/HumanSkills.html?id=&Rigueur">Rigueur</a></li>
-                                <li class="dropdown-item text-white"><a href="skills/HumanSkills.html?id=&Travail en équipe">Travail en équipe</a></li>
-                                <li class="dropdown-item text-white"><a href="skills/HumanSkills.html?id=&Créativité">Créativité</a></li>
+                                <li class="dropdown-item text-white"><a href="skills/HumanSkills.html?id=&TravailEnEquipe">Travail en équipe</a></li>
+                                <li class="dropdown-item text-white"><a href="skills/HumanSkills.html?id=&Creativite">Créativité</a></li>
                                 <li class="dropdown-item text-white"><a href="skills/HumanSkills.html?id=&Engagement">Engagement</a></li>
                             </ul>
                         </li>
@@ -75,7 +75,7 @@
                         <li class="dropdown-item dropdown ">
                             <a class="dropdown-toggle text-white " id="dropdown1-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Web</a>
                             <ul class="dropdown-menu bg-dark" aria-labelledby="dropdown1-1">
-                                <li class="dropdown-item text-white"><a href="projects/GestionEleves.html">Site web Gestion d'eleves(Php)</a></li>
+                                <li class="dropdown-item text-white"><a href="projects/GestionEleves.html">Site web Gestion d'élèves(Php)</a></li>
                                 <li class="dropdown-item text-white"><a href="projects/Secuserve.html">Plateforme Secuserve(Php)</a></li>
                                 <li class="dropdown-item text-white"><a href="projects/Petanque.html">Site web Jeu Pétanque(Php)</a></li>
                                 <li class="dropdown-item text-white"><a href="projects/Planner.html">GFI Planner(c#)</a></li>
@@ -85,7 +85,7 @@
                         <li class="dropdown-item dropdown ">
                             <a class="dropdown-toggle text-white " id="dropdown1-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Mobile </a>
                             <ul class="dropdown-menu bg-dark" aria-labelledby="dropdown1-1">
-                                <li class="dropdown-item text-white"><a href="projects/Android.html">Apllication Mobile(Android)</a></li>
+                                <li class="dropdown-item text-white"><a href="projects/Android.html">Application Mobile(Android)</a></li>
                             </ul>
                         </li>                        
                         <li class="dropdown-item dropdown ">
@@ -135,22 +135,11 @@
 
                 <h4 class="card-title">Qui suis-je?</h4>
                 <hr>
-                <p>Bienvenue sur mon portfolio ! Je m’appelle Ruben Feiteira, 
-                    j’ai 29 ans et je possède un diplôme de Concepteur Developpeur Ingotmatique,
-                    obtenu dans l’école supérieure privée d'informatique (Afip). 
-                    J’ai créé ce portfolio afin de vous offrir une vision détaillée de
-                    mon parcours, mes compétences ainsi que de mes réalisations.
+                <p>Bienvenue sur mon portfolio ! Je m’appelle Ruben Feiteira, j’ai 29 ans et je possède un diplôme de Concepteur Développeur Informatique, obtenu dans l’école supérieure privée d'informatique (Afip). J’ai créé ce portfolio afin de vous offrir une vision détaillée de mon parcours, mes compétences ainsi que de mes réalisations.
                 </p>
-                <p>Passionné par les nouvelles technologies depuis mon plus jeune âge,
-                    j’ai décidé de poursuivre l’informatique dans cette voie dés que j'ai eu opportunité,  
-                    en pratiquant dans ma vie professionnelle. Mon parcours m’a permis 
-                    de développer des compétences que je peux appliquer dans l'informatique. 
-                    Atravers l'informatique je peux aider l'humanité à ce developper 
-                    et ce concentrer dans l'essential de leur vie et faire avancer le monde.
+                <p>Passionné par les nouvelles technologies depuis mon plus jeune âge, j’ai décidé de poursuivre l’informatique dans cette voie dès que j'ai eu l'opportunité, en pratiquant dans ma vie professionnelle. Mon parcours m’a permis de développer des compétences que je peux appliquer dans l'informatique. Au travers l'informatique je peux aider l'humanité à se développer et se concentrer dans l'essentiel de leur vie et faire avancer le monde.
                 </p>
-                <p>Aujourd’hui, je suis dans le milieu professionnel, avec l’envie de développer mon expérience,
-                    mes compétences, et d’explorer les nouvelles tendances du monde de l’informatique.
-                    Bonne visite !
+                <p>Aujourd’hui, je suis dans le milieu professionnel, avec l’envie de développer mon expérience, mes compétences, et d’explorer les nouvelles tendances du monde de l’informatique. Bonne visite !
                 </p>
             </div>
         </div>
@@ -166,12 +155,12 @@
                         <div class="p-2 shadow-lg" style="margin-top: 20px;">
                             <h4>BodyBoard</h4>
                             <hr>
-                            <h4>Salon de sport</h4>
+                            <h4>Salle de sport</h4>
 
                         </div>
                     </div>                   
                     <div class="col-lg-4">
-                        <div class="card-header bg-primary text-white text-center "  style="border: 1px solid #17a2b8;margin-top:10px;">Filmes</div>
+                        <div class="card-header bg-primary text-white text-center "  style="border: 1px solid #17a2b8;margin-top:10px;">Cinéma</div>
                         <div class="p-2  shadow-lg" style="margin-top: 20px;">
                             <h4>Science-Fiction</h4>
                         </div>
@@ -187,11 +176,11 @@
                 </div>
                 <!--div class="row justify-content-center bg-white col-lg-12" style="margin-top:30px;">                   
                     <div class="col-lg-4">
-                        <div class="card-header bg-primary text-white text-center "  style="border: 1px solid #17a2b8;margin-top:10px;">Reveur Realiste</div>
+                        <div class="card-header bg-primary text-white text-center "  style="border: 1px solid #17a2b8;margin-top:10px;">Reveur Réaliste</div>
                         <div class="p-2  shadow-lg" style="margin-top: 20px;">
                             <h4>Dreaming</h4>
                             <hr>
-                            <p>Il n'y a pas d'empossibles, il y a des moyens pour rendre nos reves possibles.</p>
+                            <p>Il n'y a pas d'impossibles, il n'y a que des moyens pour rendre nos reves possibles.</p>
                         </div>
                     </div>                                       
                     <div class="col-lg-4">
@@ -199,7 +188,7 @@
                         <div class="p-2  shadow-lg" style="margin-top: 20px;">
                             <h4>Left or Right?</h4>
                             <hr>
-                            <p>Ni trop de sel ni trop de sucre.C'est au melieu que ce trouve la vertu.</p>
+                            <p>Ni trop de sel ni trop de sucre. C'est en plein millieu qui se trouve la vertue.</p>
                         </div>
                     </div>                    
                     <div class="col-lg-4">
@@ -207,7 +196,7 @@
                         <div class="p-2  shadow-lg" style="margin-top: 20px;">
                             <h4>Go further</h4>
                             <hr>
-                            <p>Parce qu’apprendre pour soit même et mettre en pratique c'est motivant et un régale.</p>
+                            <p>Parce qu’apprendre et mettre en pratique par soi même est motivant et un régale.</p>
                         </div>
                     </div>
                 </div-->
@@ -332,11 +321,11 @@
 
     </body>
 
-    <footer class="page-footer font-small blue">
-        <div class="footer-copyright text-center py-3">© 2018 Copyright:
-            <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
-        </div>
-    </footer>
+        <footer class="page-footer font-small blue">
+            <div class="footer-copyright text-center py-3">© 2018 
+                 Ruben Feiteira
+            </div>
+        </footer>
 
     <script type="text/javascript">
         $(document).ready(function () {

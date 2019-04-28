@@ -10,6 +10,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/ilbs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="../api/jquery.easypiechart.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="Js/skillsManager.js"></script>
         <link rel="stylesheet" href="../css/style.css">
         <title>Portfolio Ruben Feiteira</title>
     </head>
@@ -21,11 +22,8 @@
             transition: 0.3s;
         }
         
-        .marge{
-            display: inline-block;
-            margin-right: 10px; 
-            margin-top:  10px;
-            font-size: 1.2rem;
+        .chart{
+            cursor: pointer;
         }
     </style>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
@@ -39,10 +37,10 @@
                     <a class="nav-link" href="../experiences/experiences.html">Mon Parcours</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link active dropdown-toggle" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mes compétances</a>
+                    <a class="nav-link active dropdown-toggle" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mes compétences</a>
                     <ul class="dropdown-menu bg-dark" aria-labelledby="dropdown1">
                         <li class="dropdown-item dropdown active">
-                            <a class="dropdown-toggle text-white " id="dropdown1-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Compétances Téchniques</a>
+                            <a class="dropdown-toggle text-white " id="dropdown1-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Compétences Téchniques</a>
                             <ul class="dropdown-menu bg-dark" aria-labelledby="dropdown1-1">
                                 <li class="dropdown-item text-white"><a class="GoDown" id="#frontend">Front-End</a></li>
                                 <li class="dropdown-item text-white"><a class="GoDown" id="#backend">Back-End</a></li>
@@ -51,16 +49,16 @@
                                 <li class="dropdown-item text-white"><a class="GoDown" id="#web">Web Technologies</a></li>
                                 <li class="dropdown-item text-white"><a class="GoDown" id="#mobile">Mobile Technologies</a></li>
                                 <li class="dropdown-item text-white"><a class="GoDown" id="#Uml">UML</a></li>
-                                <li class="dropdown-item text-white"><a class="GoDown" id="#autres">Autres Valances</a></li>
+                                <li class="dropdown-item text-white"><a class="GoDown" id="#autres">Autres Valences</a></li>
                             </ul>
                         </li>
                         <li class="dropdown-item dropdown ">
                             <a class="dropdown-toggle text-white " id="dropdown1-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" >Compétences Professionnelles </a>
                             <ul class="dropdown-menu bg-dark" aria-labelledby="dropdown1-1">
                                 <li class="dropdown-item text-white"><a href="profissionalSkils.html?id=&analyser">Analyser</a></li>
+                                <li class="dropdown-item text-white"><a href="profissionalSkils.html?id=&conception">Conception</a></li>
+                                <li class="dropdown-item text-white"><a href="profissionalSkils.html?id=&developpement">Développement</a></li>
                                 <li class="dropdown-item text-white"><a href="profissionalSkils.html?id=&gestionDeProjet">Gestion de projet</a></li>
-                                <li class="dropdown-item text-white"><a href="profissionalSkils.html?id=&algorithme">Algorithme</a></li>
-                                <li class="dropdown-item text-white"><a href="profissionalSkils.html?id=&langues">Langues</a></li>
                             </ul>
                         </li>
                         <li class="dropdown-item dropdown ">
@@ -74,7 +72,7 @@
                                 <li class="dropdown-item text-white"><a href="HumanSkills.html?id=&Organisation">Organisation</a></li>
                                 <li class="dropdown-item text-white"><a href="HumanSkills.html?id=&Rigueur">Rigueur</a></li>
                                 <li class="dropdown-item text-white"><a href="HumanSkills.html?id=&TravailEnEquipe">Travail en équipe</a></li>
-                                <li class="dropdown-item text-white"><a href="HumanSkills.html?id=&Créativité">Créativité</a></li>
+                                <li class="dropdown-item text-white"><a href="HumanSkills.html?id=&Creativite">Créativité</a></li>
                                 <li class="dropdown-item text-white"><a href="HumanSkills.html?id=&Engagement">Engagement</a></li>
                             </ul>
                         </li>
@@ -86,7 +84,7 @@
                         <li class="dropdown-item dropdown ">
                             <a class="dropdown-toggle text-white " id="dropdown1-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Web</a>
                             <ul class="dropdown-menu bg-dark" aria-labelledby="dropdown1-1">
-                                <li class="dropdown-item text-white"><a href="../projects/GestionEleves.html">Site web Gestion d'eleves(Php)</a></li>
+                                <li class="dropdown-item text-white"><a href="../projects/GestionEleves.html">Site web Gestion d'élèves(Php)</a></li>
                                 <li class="dropdown-item text-white"><a href="../projects/Secuserve.html">Plateforme Secuserve(Php)</a></li>
                                 <li class="dropdown-item text-white"><a href="../projects/Petanque.html">Site web Jeu Pétanque(Php)</a></li>
                                 <li class="dropdown-item text-white"><a href="../projects/Planner.html">GFI Planner(c#)</a></li>
@@ -96,7 +94,7 @@
                         <li class="dropdown-item dropdown ">
                             <a class="dropdown-toggle text-white " id="dropdown1-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Mobile </a>
                             <ul class="dropdown-menu bg-dark" aria-labelledby="dropdown1-1">
-                                <li class="dropdown-item text-white"><a href="../projects/Android.html">Apllication Mobile(Android)</a></li>
+                                <li class="dropdown-item text-white"><a href="../projects/Android.html">Application Mobile(Android)</a></li>
                             </ul>
                         </li>                        
                         <li class="dropdown-item dropdown ">
@@ -123,32 +121,32 @@
                     <div class="col-lg-3 ">
                         <div class="container">   			
                             <div class="box">
-                                <div class="chart" data-percent="90">90%</div>
-                                <h3>Html</h3>		
+                                <div class="chart" data-percent="90" data-content="Html">90%</div>
+                                <h3 data-content="Html">Html</h3>		
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 ">
                         <div class="container">   			
                             <div class="box">
-                                <div class="chart" data-percent="70">70%</div>		
-                                <h3>Css</h3>
+                                <div data-content="Css" class="chart" data-percent="70">70%</div>		
+                                <h3 data-content="Css">Css</h3>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 ">
                         <div class="container">   			
                             <div class="box">
-                                <div class="chart" data-percent="80">80%</div>
-                                <h3>Bootstrap</h3>		
+                                <div data-content="Bootstrap" class="chart" data-percent="80">80%</div>
+                                <h3 data-content="Bootstrap">Bootstrap</h3>		
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 ">
                         <div class="container">   			
                             <div class="box">
-                                <div class="chart" data-percent="70">70%</div>
-                                <h3>JavaScript</h3>		
+                                <div  data-content="JavaScript"class="chart" data-percent="70">70%</div>
+                                <h3 data-content="JavaScript">JavaScript</h3>		
                             </div>
                         </div>
                     </div>
@@ -163,7 +161,7 @@
             <div class="p-5 bg-white shadow-sm col-lg-4" >
                 <div class=" justify-content-center bg-white col-lg-12">                  
                     <h4>
-                        Compétences Professionnelles
+                        Compétences Professionnelles Associées
                     </h4>
                     <div id="profissionalSkils">     
                     </div>
@@ -173,7 +171,7 @@
                     <br>
                     
                     <h4>
-                        Compétences Humaines
+                        Compétences Humaines Associées
                     </h4>
                     
                     <div id="humanSkils">
@@ -197,24 +195,24 @@
                     <div class="col-lg-3" >
                         <div class="container">   			
                             <div class="box">
-                                <div class="chart" data-percent="80">80%</div>	
-                                <h3>PHP</h3>	
+                                <div data-content="PHP" class="chart" data-percent="80">80%</div>	
+                                <h3 data-content="PHP">PHP</h3>	
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 ">
                         <div class="container">   			
                             <div class="box">
-                                <div class="chart" data-percent="80">80%</div>	
-                                <h3>C#</h3>	
+                                <div data-content="C#" class="chart" data-percent="80">80%</div>	
+                                <h3 data-content="C#">C#</h3>	
                             </div>
                         </div>
                     </div>	
                     <div class="col-lg-3 ">
                         <div class="container">   			
                             <div class="box">
-                                <div class="chart" data-percent="70">70%</div>	
-                                <h3>Java</h3>	
+                                <div data-content="Java" class="chart" data-percent="70">70%</div>	
+                                <h3 data-content="Java">Java</h3>	
                             </div>
                         </div>
                     </div>  
@@ -229,7 +227,7 @@
             <div class="p-5 bg-white shadow-sm col-lg-4" >
                 <div class=" justify-content-center bg-white col-lg-12">                  
                     <h4>
-                        Compétences Professionnelles
+                        Compétences Professionnelles Associées
                     </h4>
                     <div id="profissionalSkils">     
                     </div>
@@ -239,7 +237,7 @@
                     <br>
                     
                     <h4>
-                        Compétences Humaines
+                        Compétences Humaines Associées
                     </h4>
                     
                     <div id="humanSkils">
@@ -264,24 +262,24 @@
                     <div class="col-lg-3 ">
                         <div class="container">   			
                             <div class="box">
-                                <div class="chart" data-percent="80">80%</div>
-                                <h3>MySql</h3>				
+                                <div data-content="MySql" class="chart" data-percent="80">80%</div>
+                                <h3 data-content="MySql">MySql</h3>				
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 ">
                         <div class="container">   			
                             <div class="box">
-                                <div class="chart" data-percent="60">60%</div>
-                                <h3>SqlServer</h3>	
+                                <div data-content="SqlServer" class="chart" data-percent="60">60%</div>
+                                <h3 data-content="SqlServer" >SqlServer</h3>	
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 ">
                         <div class="container">   			
                             <div class="box">
-                                <div class="chart" data-percent="60">60%</div>	
-                                <h3>FireBase</h3>	
+                                <div data-content="FireBase" class="chart" data-percent="60">60%</div>	
+                                <h3 data-content="FireBase">FireBase</h3>	
                             </div>
                         </div>
                     </div>
@@ -295,7 +293,7 @@
             <div class="p-5 bg-white shadow-sm col-lg-4" >
                 <div class=" justify-content-center bg-white col-lg-12">                  
                     <h4>
-                        Compétences Professionnelles
+                        Compétences Professionnelles Associées
                     </h4>
                     <div id="profissionalSkils">     
                     </div>
@@ -305,7 +303,7 @@
                     <br>
                     
                     <h4>
-                        Compétences Humaines
+                        Compétences Humaines Associées
                     </h4>
                     
                     <div id="humanSkils">
@@ -329,24 +327,24 @@
                     <div class="col-lg-3 ">
                         <div class="container">   			
                             <div class="box">
-                                <div class="chart" data-percent="70">70%</div>	
-                                <h3>Entity Framework</h3>				
+                                <div data-content="Entity Framework" class="chart" data-percent="70">70%</div>	
+                                <h3 data-content="Entity Framework">Entity Framework</h3>				
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 ">
                         <div class="container">   			
                             <div class="box">
-                                <div class="chart" data-percent="70">70% </div>
-                                <h3>Hibernate</h3>	
+                                <div data-content="Hibernate" class="chart" data-percent="70">70% </div>
+                                <h3 data-content="Hibernate">Hibernate</h3>	
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 ">
                         <div class="container">   			
                             <div class="box">
-                                <div class="chart" data-percent="50">50% </div>
-                                <h3>Linq</h3>	
+                                <div data-content="Linq" class="chart" data-percent="50">50% </div>
+                                <h3 data-content="Linq">Linq</h3>	
                             </div>
                         </div>
                     </div>
@@ -360,7 +358,7 @@
             <div class="p-5 bg-white shadow-sm col-lg-4" >
                 <div class=" justify-content-center bg-white col-lg-12">                  
                     <h4>
-                        Compétences Professionnelles
+                        Compétences Professionnelles Associées
                     </h4>
                     <div id="profissionalSkils">     
                     </div>
@@ -370,7 +368,7 @@
                     <br>
                     
                     <h4>
-                        Compétences Humaines
+                        Compétences Humaines Associées
                     </h4>
                     
                     <div id="humanSkils">
@@ -394,24 +392,24 @@
                     <div class="col-lg-3 ">
                         <div class="container">   			
                             <div class="box">
-                                <div class="chart" data-percent="70">70% </div>
-                                <h3>Jquery</h3>		
+                                <div data-content="Jquery" class="chart" data-percent="70">70% </div>
+                                <h3 data-content="Jquery">Jquery</h3>		
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 ">
                         <div class="container">   			
                             <div class="box">
-                                <div class="chart" data-percent="70">70% </div>	
-                                <h3>TypeScript</h3>	
+                                <div data-content="TypeScript" class="chart" data-percent="70">70% </div>	
+                                <h3 data-content="TypeScript">TypeScript</h3>	
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 ">
                         <div class="container">   			
                             <div class="box">
-                                <div class="chart" data-percent="50">50%</div>		
-                                <h3>Symphony</h3>
+                                <div data-content="Symphony" class="chart" data-percent="50">50%</div>		
+                                <h3 data-content="Symphony">Symphony</h3>
                             </div>
                         </div>
                     </div>	
@@ -419,16 +417,16 @@
                         <div class="col-lg-3 ">
                             <div class="container">   			
                                 <div class="box">
-                                    <div class="chart" data-percent="80">80%</div>	
-                                    <h3>Asp.net</h3>	
+                                    <div data-content="Asp.net" class="chart" data-percent="80">80%</div>	
+                                    <h3 data-content="Asp.net">Asp.net</h3>	
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 ">
                             <div class="container">   			
                                 <div class="box">
-                                    <div class="chart" data-percent="90">90%</div>		
-                                    <h3>Ajax</h3>
+                                    <div data-content="Ajax" class="chart" data-percent="90">90%</div>		
+                                    <h3 data-content="Ajax">Ajax</h3>
                                 </div>
                             </div>
                         </div>
@@ -443,7 +441,7 @@
             <div class="p-5 bg-white shadow-sm col-lg-4" >
                 <div class=" justify-content-center bg-white col-lg-12">                  
                     <h4>
-                        Compétences Professionnelles
+                        Compétences Professionnelles Associées
                     </h4>
                     <div id="profissionalSkils">     
                     </div>
@@ -453,7 +451,7 @@
                     <br>
                     
                     <h4>
-                        Compétences Humaines
+                        Compétences Humaines Associées
                     </h4>
                     
                     <div id="humanSkils">
@@ -476,8 +474,8 @@
                     <div class="col-lg-3">
                         <div class="container">   			
                             <div class="box">
-                                <div class="chart" data-percent="70">70%</div>
-                                <h3>Android Studio(Java)</h3>		
+                                <div data-content="Android Studio(Java)" class="chart" data-percent="70">70%</div>
+                                <h3 data-content="Android Studio(Java)">Android Studio(Java)</h3>		
                             </div>
                         </div>
                     </div>
@@ -491,7 +489,7 @@
             <div class="p-5 bg-white shadow-sm col-lg-4" >
                 <div class=" justify-content-center bg-white col-lg-12">                  
                     <h4>
-                        Compétences Professionnelles
+                        Compétences Professionnelles Associées
                     </h4>
                     <div id="profissionalSkils">     
                     </div>
@@ -501,7 +499,7 @@
                     <br>
                     
                     <h4>
-                        Compétences Humaines
+                        Compétences Humaines Associées
                     </h4>
                     
                     <div id="humanSkils">
@@ -524,24 +522,24 @@
                     <div class="col-lg-3 ">
                         <div class="container">   			
                             <div class="box">
-                                <div class="chart" data-percent="90">90%</div>	
-                                <h3>Diagramme de classes</h3>				
+                                <div data-content="Diagramme de classes" class="chart" data-percent="90">90%</div>	
+                                <h3 data-content="Diagramme de classes">Diagramme de classes</h3>				
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 ">
                         <div class="container">   			
                             <div class="box">
-                                <div class="chart" data-percent="90">90% </div>	
-                                <h3>Diagramme de Cas</h3>	
+                                <div data-content="Diagramme de Cas" class="chart" data-percent="90">90% </div>	
+                                <h3 data-content="Diagramme de Cas">Diagramme de Cas</h3>	
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 ">
                         <div class="container">   			
                             <div class="box">
-                                <div class="chart" data-percent="90">90%</div>		
-                                <h3>Diagramme de séquence</h3>	
+                                <div data-content="Diagramme de séquence" class="chart" data-percent="90">90%</div>		
+                                <h3 data-content="Diagramme de séquence">Diagramme de séquence</h3>	
                             </div>
                         </div>
                     </div>
@@ -555,7 +553,7 @@
             <div class="p-5 bg-white shadow-sm col-lg-4" >
                 <div class=" justify-content-center bg-white col-lg-12">                  
                     <h4>
-                        Compétences Professionnelles
+                        Compétences Professionnelles Associées
                     </h4>
                     <div id="profissionalSkils">     
                     </div>
@@ -565,7 +563,7 @@
                     <br>
                     
                     <h4>
-                        Compétences Humaines
+                        Compétences Humaines Associées
                     </h4>
                     
                     <div id="humanSkils">
@@ -583,30 +581,30 @@
 
         
         <div class="row col-lg-12" style="margin-top:50px;margin-bottom:40px;" id="autres">
-            <div class="p-5 card-header bg-primary text-white text-center col-lg-2"  style="border: 1px solid #17a2b8; margin-right:20px;padding-top:100px; line-height:175px;height: 267px;"><p>Autres Valances</p></div>
+            <div class="p-5 card-header bg-primary text-white text-center col-lg-2"  style="border: 1px solid #17a2b8; margin-right:20px;padding-top:100px; line-height:175px;height: 267px;"><p>Autres Valences</p></div>
             <div class="p-3 bg-white shadow-sm col-lg-8">
                 <div class="row justify-content-center bg-white col-lg-12" style="margin-right:0px; padding-top: 30px;">
                     <div class="col-lg-3 ">
                         <div class="container">   			
                             <div class="box">
-                                <div class="chart" data-percent="90">90%</div>	
-                                <h3>Mvc</h3>				
+                                <div data-content="Mvc" class="chart" data-percent="90">90%</div>	
+                                <h3 data-content="Mvc">Mvc</h3>				
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 ">
                         <div class="container">   			
                             <div class="box">
-                                <div class="chart" data-percent="90">90% </div>	
-                                <h3>POO</h3>	
+                                <div data-content="POO" class="chart" data-percent="90">90% </div>	
+                                <h3 data-content="POO">POO</h3>	
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 ">
                         <div class="container">   			
                             <div class="box">
-                                <div class="chart" data-percent="60">60%</div>		
-                                <h3>Code First</h3>	
+                                <div data-content="Code First" class="chart" data-percent="60">60%</div>		
+                                <h3 data-content="Code First">Code First</h3>	
                             </div>
                         </div>
                     </div>
@@ -620,7 +618,7 @@
             <div class="p-5 bg-white shadow-sm col-lg-4" >
                 <div class=" justify-content-center bg-white col-lg-12">                  
                     <h4>
-                        Compétences Professionnelles
+                        Compétences Professionnelles Associées
                     </h4>
                     <div id="profissionalSkils">     
                     </div>
@@ -630,7 +628,7 @@
                     <br>
                     
                     <h4>
-                        Compétences Humaines
+                        Compétences Humaines Associées
                     </h4>
                     
                     <div id="humanSkils">
@@ -647,60 +645,68 @@
         </div>
         
     </body>   
-        <div class="row col-sm-12 ">
-            <div class="col-sm-2">  
-            </div>
-            <div class="col-sm-3">
-                <div class="card-header bg-primary text-white text-center"  style="border: 1px solid #17a2b8;margin-top:150px;">Mes réalisations</div>
-            </div>
-        </div>
-        <div class=" row col-sm-12">
-            <div class="col-sm-2">  
-            </div>
-            <div class="p-4 bg-white shadow-sm col-sm-5 letra">
-                
-            </div>
-        </div>
     
-        <div class="row col-sm-12 ">
-            <div class="col-sm-2">  
-            </div>
-            <div class="col-sm-3">
-                <div class="card-header bg-primary text-white text-center"  style="border: 1px solid #17a2b8;margin-top:50px;">Compétences professionnelles</div>
-            </div>
+    <div class="row col-sm-12 ">
+        <div class="col-sm-2">  
         </div>
-        <div class=" row col-sm-12">
-            <div class="col-sm-2">  
-            </div>
-            <div class="p-4 bg-white shadow-sm col-sm-5 letra">
-                
-            </div>
+        <div class="col-sm-3" style="padding-left: 0px;">
+            <div class="card-header bg-primary text-white text-center"  style="border: 1px solid #17a2b8;margin-top:50px;">Compétences professionnelles</div>
         </div>
+    </div>
+    <div class=" row col-sm-12">
+        <div class="col-sm-2">  
+        </div>
+        <div class="p-4 bg-white shadow-sm col-sm-5 letra">
+            <a href="profissionalSkils.html?id=&analyser" class='marge'>Analyser</a>
+            <a href="profissionalSkils.html?id=&conception" class='marge'>Conception</a>
+            <a href="profissionalSkils.html?id=&developpement" class='marge'>Développement</a>
+            <a href="profissionalSkils.html?id=&gestionDeProjet" class='marge'>Gestion de projet</a>
+        </div>
+    </div>
+    <div class="row col-sm-12 ">
+        <div class="col-sm-2">  
+        </div>
+        <div class="col-sm-3" style="padding-left: 0px;">
+            <div class="card-header bg-primary text-white text-center"  style="border: 1px solid #17a2b8;margin-top:50px;">Compétences Humaines</div>
+        </div>
+    </div>
+    <div class=" row col-sm-12">
+        <div class="col-sm-2">  
+        </div>
+        <div class="p-4 bg-white shadow-sm col-sm-5 letra">
+            <a href="HumanSkills.html?id=&Autonomie" class='marge'>Autonomie</a><a href="HumanSkills.html?id=&Curieux" class='marge'>Curiosité</a>
+            <a href="HumanSkills.html?id=&Perspicace" class='marge'>Perspicace</a><a href="HumanSkills.html?id=&Communication" class='marge'>Communication</a>
+            <a href="HumanSkills.html?id=&Diplomatie" class='marge'>Diplomatie</a><a href="HumanSkills.html?id=&Organisation" class='marge'>Organisation</a>
+            <a href="HumanSkills.html?id=&Rigueur" class='marge'>Rigueur</a><a href="HumanSkills.html?id=&TravailEnEquipe" class='marge'>Travail en équipe</a>
+            <a href="HumanSkills.html?id=&Creativite" class='marge'>Créativité</a><a href="HumanSkills.html?id=&Engagement" class='marge'>Engagement</a>
+        </div>
+    </div>
+    <div class="row col-sm-12 ">
+        <div class="col-sm-2">  
+        </div>
+        <div class="col-sm-3" style="padding-left: 0px;">
+            <div class="card-header bg-primary text-white text-center"  style="border: 1px solid #17a2b8;margin-top:50px;">Mes réalisations</div>
+        </div>
+    </div>
+    <div class=" row col-sm-12">
+        <div class="col-sm-2">  
+        </div>
+        <div class="p-4 bg-white shadow-sm col-sm-5 letra">
+            <a class='marge' href="../projects/GestionEleves.html">Site web Gestion d'élèves</a>
+            <a class='marge' href="../projects/Secuserve.html">Plateforme Secuserve</a>
+            <a class='marge' href="../projects/Petanque.html">Site web Jeu Pétanque</a>
+            <a class='marge' href="../projects/Planner.html">GFI Planner</a>
+            <a class='marge' href="../projects/Timesheet.html">GFI TimeSheet</a>
+            <a class='marge' href="../projects/Android.html">Application Mobile</a>
+            <a class='marge' href="../projects/JavaBanque.html">La Banque</a>
+        </div>
+    </div>
     
-            <div class="row col-sm-12 ">
-            <div class="col-sm-2">  
+        <footer class="page-footer font-small blue">
+            <div class="footer-copyright text-center py-3">© 2018 
+                 Ruben Feiteira
             </div>
-            <div class="col-sm-3">
-                <div class="card-header bg-primary text-white text-center"  style="border: 1px solid #17a2b8;margin-top:50px;">Compétences Humaines</div>
-            </div>
-        </div>
-        <div class=" row col-sm-12">
-            <div class="col-sm-2">  
-            </div>
-            <div class="p-4 bg-white shadow-sm col-sm-5 letra">
-                       <a href="HumanSkills.html?id=&Autonomie" class='marge'>Autonomie</a><a href="HumanSkills.html?id=&Curieux" class='marge'>Curieux</a>
-                       <a href="HumanSkills.html?id=&Perspicace" class='marge'>Perspicace</a><a href="HumanSkills.html?id=&Communication" class='marge'>Communication</a>
-                       <a href="HumanSkills.html?id=&Diplomatie" class='marge'>Diplomatie</a><a href="HumanSkills.html?id=&Organisation" class='marge'>Organisation</a>
-                       <a href="HumanSkills.html?id=&Rigueur" class='marge'>Rigueur</a><a href="HumanSkills.html?id=&Travail en équipe" class='marge'>Travail en équipe</a>
-                       <a href="HumanSkills.html?id=&Créativité" class='marge'>Créativité</a><a href="HumanSkills.html?id=&Engagement" class='marge'>Engagement</a>
-            </div>
-        </div>
-    
-    <footer class="page-footer font-small blue">
-        <div class="footer-copyright text-center py-3">© 2018 Copyright:
-            <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
-        </div>
-    </footer>
+        </footer>
 
     <script type="text/javascript">
   $(document).ready(function () {
@@ -814,20 +820,32 @@ var previeousContent= "";
         })
         return htmlContent;
     }
+    
+    function getProjectsContent(content){
+        var htmlContent = "";
+        $.each(skillsManager.projects[content],function(cle, value) {
+            if(!(undefined === skillsManager.links[value])){
+                htmlContent += "<a href="+skillsManager.links[value].link+" class='marge'>"+skillsManager.links[value].name+"</a>" ;
+            }
+        });
+        
+        return htmlContent;
+    }
    
       
       
-    $(".chart, h3").click(function(e) {
-        var parentId= $(this).closest("div[id]")[0].id;
-        
-        var content= $(this).text();
+    $(".chart, h3").click(function() {
+        var parentId= $(this).closest("div[id]")[0].id;       
+        var content= $(this).attr("data-content");
         
         if(previousClassName == "" && previeousContent == ""){
             
             $("."+parentId).find('#profissionalSkils').empty();    
             $("."+parentId).find('#humanSkils').empty();
+            $("."+parentId).find('#projects').empty();
             $("."+parentId).find('#profissionalSkils').append(getProfessionalContent(content));
             $("."+parentId).find('#humanSkils').append(getHumanContent(content));
+            $("."+parentId).find('#projects').append(getProjectsContent(content));
                      
             showDiv(parentId);           
             previousClassName = parentId;
@@ -848,8 +866,10 @@ var previeousContent= "";
         if(previousClassName == parentId && content != previeousContent){
             $("."+parentId).find('#profissionalSkils').empty();
             $("."+parentId).find('#humanSkils').empty();
+            $("."+parentId).find('#projects').empty();
             $("."+parentId).find('#profissionalSkils').append(getProfessionalContent(content));
             $("."+parentId).find('#humanSkils').append(getHumanContent(content));
+            $("."+parentId).find('#projects').append(getProjectsContent(content));
             previousClassName = parentId;
             previeousContent = content;
             return;
@@ -861,8 +881,10 @@ var previeousContent= "";
             $('.'+previousClassName).slideUp('slow');
             $("."+parentId).find('#profissionalSkils').empty();
             $("."+parentId).find('#humanSkils').empty();
+            $("."+parentId).find('#projects').empty();
             $("."+parentId).find('#profissionalSkils').append(getProfessionalContent(content));
             $("."+parentId).find('#humanSkils').append(getHumanContent(content));
+            $("."+parentId).find('#projects').append(getProjectsContent(content));
                       
             showDiv(parentId);
             
